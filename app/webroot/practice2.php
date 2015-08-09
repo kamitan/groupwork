@@ -1,0 +1,28 @@
+<?php
+$userdata[]=array(
+	'id'=>0,
+	'user_name'=>'subaru',
+	'title'=>'subaru',
+'content'=>'subaru',
+	);
+$userdata[]=array(
+	'id'=>0,
+	'user_name'=>'subaru',
+	'title'=>'subaru',
+'content'=>'subaru',
+	);
+$userdata[]=array(
+	'id'=>0,
+	'user_name'=>'subaru',
+	'title'=>'subaru',
+'content'=>'subaru',
+	);
+$userdata[]=array(
+	'id'=>0,
+	'user_name'=>'subaru',
+	'title'=>'subaru',
+'content'=>'subaru',
+	);
+
+var_dump($userdata);
+?>
