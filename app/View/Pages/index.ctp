@@ -1,45 +1,18 @@
-<div class="row container-side">
-	<div class=" col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-1">
-	
-
-	<div class="alert alert-success">
-			<?php echo $this->Session->flash(); ?>
-		</div>
-		
-		<?php foreach($topics as $topic):?> 
+<div class="row">
+	<div class="col-sm-offset-1 col-sm-7 col-xs-offset-1 col-xs-10">
+		<?php if ($this->Session->check('Message.flash')) : ?>
 			<article class="row">
-				<div class="col-sm-3">
-					<h3><?php echo $topic['Topic']['created']?></h3>
+				<div class="alert alert-success">
+					<?php echo $this->Session->flash(); ?>
 				</div>
-				<div class="col-sm-9">
-					<h2><?php echo $topic['Topic']['title']?></h2>
-					<button type="button" class="btn btn-default">
-						<?php echo $this->Html->link(
-							'Edit',
-							array(
-								'controller' =>'topics',
-								'action' =>'edit',
-								$topic['Topic']['id']
-								)
-								); ?> 
-							</button>
-							<button type="button" class="btn btn-default">
-								<?php echo $this->Form->postLink(__('Delete'), 
-									array('controller' => 'topics', 'action' => 'delete', $topic['Topic']['id']), 
-									array(), __('Are you sure you want to delete # %s?', $topic['Topic']['id'])); ?>
-								</button>
-
-								<p><?php echo $topic['Topic']['body']?></p>
-							<p><a href="/detail/1">Continue Reading ...</a></p>
-							<span class="fa fa-tags"></span>
-							<a href="/cake/categories/view1">
-								<?php echo $topic['Category']['name']?>
-							</a>
-						</div>
-					</article>
-				<?php endforeach; ?>
-
-			</div>
-			<?php echo $this->element('aside'); ?>
-			<?php echo $this->element('modal'); ?>
-		</div>
+			</article>
+		<?php endif; ?>
+		<a href="http://www.yahoo.co.jp/">
+				     <INPUT type="Button" type='image' src="http://www.oyawaza.com/gif/study3gaiyou.png" alt="送信する" align="middle" value="過去問を投稿する" name="botan3" style="color:#0000FF; font-size:1.5em; font-weight:bold; WIDTH: 300px; HEIGHT: 200px"</a>
+	    <a href="https://www.google.co.jp/?gws_rd=ssl">
+				     <INPUT type="Button" value="過去問を探す" name="botan3" style="color:#0000FF; font-size:1.5em; font-weight:bold; WIDTH: 300px; HEIGHT: 200px"></a>
+				</div>
+			</article>
+	</div>
+	<?php echo $this->element('aside'); ?>
+</div>
