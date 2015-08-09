@@ -3,7 +3,7 @@
 		<h2 class="form text-center">welcome to guest</h2>
 		<div class="form-group">
 			<?php echo $this->Form->create('Topic'); ?>
-		</div>
+		</div><br>
 		<div class="form-group">
 			<?php echo $this->Form->input('title',
 			array('type' => 'text','class' => 'form-control','label'=>'名前')); ?>
