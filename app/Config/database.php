@@ -74,7 +74,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => 'root',
-		'database' => 'blog',
+		'database' => 'kamitan',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
